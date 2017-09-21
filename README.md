@@ -4,7 +4,7 @@ Will be used to build the rookie's confidence in how to use Github and working o
 
 Code Created Will be Based on Heimdall Code
 
-The training this year will be using old Heimdall Code as a reference and shoud be able to be ran on Heimdall error free.
+The training this year will be conducted using old Heimdall Code as a reference and shoud be able to be run on Heimdall error free.
 Rookies will be either working on this project in pairs or as individuals and will each be working on a seperate branch. Each pair
 or individual will be creating a robot from scratch using Eclipse and referencing old robot code in order to create all subsystems and 
 commands neccessary to run the robobt. If working as a pair it is expected each person provides about the same amount of work to the
