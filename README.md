@@ -11,7 +11,7 @@ commands neccessary to run the robobt. If working as a pair it is expected each 
 project. Branches will be monitered by the people teaching (mainly Skyler and a little of Darius), and rookies will be taught how to
 properly merge branches and commit so PRs are easier. Code written will be examined and wil be made sure that it follows all 
 conventions the team follows in order to make programming easily readable and editable in the future. In order to test code, rookies may 
-use the practice board and be taught how to test properly and efficiently using waht we have on it. No code will be placed on Heimdall
+use the practice board and be taught how to test properly and efficiently using what we have on it. No code will be placed on Heimdall
 until it is all finalized and ready to be tested.
 
 Once each pair or individual is ready they will be able to test and upload code onto Heimdall and see if it works or not.
