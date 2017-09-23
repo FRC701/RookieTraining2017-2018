@@ -5,7 +5,7 @@
 
 class OI {
 private:
-
+  
   static std::shared_ptr<OI> self;
 
 //..........driver..........
@@ -137,7 +137,7 @@ public:
   static const int kButtonCoBallOuttake_ID = 1;
   static const int kButtonCoFloorOuttake_ID = 2;
   static const int kButtonCoCancel_ID = 4;
-
+  
 };
 
 #endif
