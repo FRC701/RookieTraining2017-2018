@@ -3,6 +3,7 @@
 #include "Subsystems/Chassis.h"
 #include "Subsystems/Elevator.h"
 #include "Subsystems/Intake.h"
+#include "Subsystems/Lights.h"
 #include "RobotMap.h"
 
 std::unique_ptr<OI> Robot::oi;
@@ -30,6 +31,7 @@ void Robot::RobotInit()
 	Chassis::getInstance();
 	Elevator::getInstance();
 	Intake::getInstance();
+	Lights::getInstance();
 	OI::getInstance();
 
 }
