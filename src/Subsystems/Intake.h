@@ -1,22 +1,22 @@
-#ifndef Chassis_H
-#define Chassis_H
+#ifndef Intake_H
+#define Intake_H
 
 #include <Commands/Subsystem.h>
 
-class Chassis : public frc::Subsystem {
-
+class Intake : public frc::Subsystem {
 private:
 	// It's desirable that everything possible under private except
 	// for methods that implement subsystem capabilities
 
 	static const char kSubsystemName[];
-	static std::shared_ptr<Chassis> self;
-	Chassis();
+	static std::shared_ptr<Intake> self;
+	Intake();
 
 public:
-	static std::shared_ptr<Chassis> getInstance();
+
+	static std::shared_ptr<Intake> getInstance();
 
 	void InitDefaultCommand();
 };
 
-#endif  // Chassis_H
+#endif  // Intake_H
