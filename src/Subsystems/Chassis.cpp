@@ -1,6 +1,6 @@
 #include "Chassis.h"
-#include "../RobotMap.h"
 #include "CANTalon.h"
+#include "../RobotMap.h"
 #include "../Commands/Tankdrive.h"
 
 const char Chassis::kSubsystemName[] = "Chassis";
