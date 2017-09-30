@@ -13,4 +13,4 @@ void ToggleBrake::Initialize() {
 	Elevator::BrakeValue value
 			= Elevator::getInstance()->IsBrakeOn() ? Elevator::kBrakeOff : Elevator::kBrakeOn;
 	Elevator::getInstance()->SetBrake(value);
-	}
+}
