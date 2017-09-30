@@ -24,6 +24,7 @@ Elevator::Elevator() : Subsystem(kSubsystemName),
 void Elevator::InitDefaultCommand() {
 	// Set the default command for a subsystem here.
 	// SetDefaultCommand(new MySpecialCommand());
+	SetDefaultCommand(new ElevatorOn(0.0));
 }
 
 // Put methods for controlling this subsystem
