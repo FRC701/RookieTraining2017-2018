@@ -1,6 +1,5 @@
 #include "SetHaySqueeze.h"
 
-
 SetHaySqueeze::SetHaySqueeze(Elevator::HaySqueezeValue value)
 : mValue(value)	{
 	// Use Requires() here to declare subsystem dependencies
@@ -12,5 +11,4 @@ SetHaySqueeze::SetHaySqueeze(Elevator::HaySqueezeValue value)
 void SetHaySqueeze::Initialize() {
 
 	Elevator::getInstance()->SetHaySqueeze(mValue);
-
 }
