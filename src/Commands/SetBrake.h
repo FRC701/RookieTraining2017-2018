@@ -4,7 +4,7 @@
 #include "Commands/InstantCommand.h"
 #include "../Subsystems/Elevator.h"
 
-class SetBrake : public InstantCommand {
+class SetBrake : public frc::InstantCommand {
 public:
 	SetBrake(Elevator::BrakeValue value);
 	void Initialize();
