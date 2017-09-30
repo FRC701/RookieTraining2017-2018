@@ -13,6 +13,7 @@ void SetLights::Initialize() {
 
 // Called repeatedly when this Command is scheduled to run
 void SetLights::Execute() {
+
 	Lights::getInstance()->SetGlow(mValue);
 }
 
