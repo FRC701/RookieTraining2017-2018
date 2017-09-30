@@ -1,5 +1,6 @@
 #include "Elevator.h"
 #include "../RobotMap.h"
+#include "../Commands/ElevatorOn.h"
 
 const char Elevator::kSubsystemName[] = "Elevator";
 
