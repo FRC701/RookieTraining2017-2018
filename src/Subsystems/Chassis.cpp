@@ -1,7 +1,18 @@
 #include "Chassis.h"
 #include "../RobotMap.h"
 
-Chassis::Chassis() : Subsystem("ExampleSubsystem") {
+const char Chassis::kSubsystemName[] = "Chassis";
+
+std::shared_ptr<Chassis> Chassis::self;
+
+std::shared_ptr<Chassis> Chassis::getInstance() {
+  if (! self) {
+    self = std::shared_ptr<Chassis>(new Chassis);
+  }
+  return self;
+}
+
+Chassis::Chassis() : Subsystem(kSubsystemName) {
 
 }
 
