@@ -27,7 +27,7 @@ OI::OI() {
 :driver(new Joystick(0))
 ,dA(driver.get(), kbuttonA_ID)
 ,dB(driver.get(), kbuttonB_ID)
-,dX(driver.get(), kbuttonX_ID)
+,dX(driver.get(), kbuttonX_ID) //hi
 ,dY(driver.get(), kbuttonY_ID)
 ,dLB(driver.get(), kbuttonLB_ID)
 ,dRB(driver.get(), kbuttonRB_ID)
