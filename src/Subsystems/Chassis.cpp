@@ -7,7 +7,7 @@ std::shared_ptr<Chassis> Chassis::self;
 
 std::shared_ptr<Chassis> Chassis::getInstance() {
 	if (! self) {
-		Self = std::shared_ptr<Chassis>(new Chassis);
+	self = std::shared_ptr<Chassis>(new Chassis);
 	}
 	return self;
 }
