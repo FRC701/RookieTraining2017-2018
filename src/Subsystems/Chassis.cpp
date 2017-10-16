@@ -12,7 +12,7 @@ std::shared_ptr<Chassis> Chassis::getInstance() {
 	return self;
 }
 
-Chassis::Chassis() : Subsystem("ExampleSubsystem") {
+Chassis::Chassis() : Subsystem(kSubsystemName) {
 
 }
 
