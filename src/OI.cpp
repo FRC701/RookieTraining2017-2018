@@ -21,7 +21,7 @@ std::shared_ptr<OI> OI::self;
 
 std::shared_ptr<OI> OI::getInstance() {
 	if (! self) {
-		self = std::make_shared<OI>;
+		self = std::make_shared<OI>();
 	}
 	return self;
 }
@@ -31,7 +31,7 @@ OI::OI()
 , dA(driver.get(), kButtonA_ID)
 , dB(driver.get(), kButtonB_ID)
 , dX(driver.get(), kButtonX_ID)
-, dY(driver.get(), kButtoY_ID)
+, dY(driver.get(), kButtonY_ID)
 , dLB(driver.get(), kButtonLB_ID)
 , dRB(driver.get(), kButtonRB_ID)
 , dL3(driver.get(), kButtonL3_ID)
@@ -55,7 +55,7 @@ OI::OI()
 ,coTurret0(coDriver.get(), kButtonCoTurret0_ID)
 ,coTurret90(coDriver.get(), kButtonCoTurret90_ID)
 ,coTurretMinus(coDriver(), kButtonCoTurretMinus_ID)
-,coTurretPlus(coDriver(). kButtonCoTurretPlus_ID)
+,coTurretPlus(coDriver(), kButtonCoTurretPlus_ID)
 
 ,coShooterMinus(coDriver.get(), kButtonCoShooterMinus_ID)
 ,coShooterPlus(coDriver.get(), kButtonCoShooterPlus_ID)
@@ -78,7 +78,7 @@ std::shared_ptr<Joystick> OI::getDriver() {
 }
 
 double OI::getDriverLeftXAxis() const {
-	return driver->GetRawAxis(kLeftAxis_ID);
+	return driver->GetRawAxis(kLeftXAxis_ID);
 }
 
 double OI::getDriverLeftYAxis() const {
