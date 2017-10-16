@@ -102,7 +102,7 @@ public:
 	double getCoDriverRIghtYAxis() const;
 
 	double getCoDriverLeftTrigger() const;
-	double GetCoDriverRightTrigger() const;
+	double getCoDriverRightTrigger() const;
 
 
 	//ids
