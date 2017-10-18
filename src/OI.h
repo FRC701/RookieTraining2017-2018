@@ -66,6 +66,7 @@ private:
 	JoystickButton coBallIntake;
 	JoystickButton coGearScore;
 	JoystickButton coGearPickup;
+	JoystickButton coGearToggle;
 	JoystickButton coBallOuttake;
 	JoystickButton coFloorOuttake;
 	JoystickButton coCancel;
@@ -99,7 +100,7 @@ public:
 	double getCoDriverLeftYAxis() const;
 
 	double getCoDriverRightXAxis() const;
-	double getCoDriverRIghtYAxis() const;
+	double getCoDriverRightYAxis() const;
 
 	double getCoDriverLeftTrigger() const;
 	double getCoDriverRightTrigger() const;
@@ -130,7 +131,7 @@ public:
 
 //custom
 
-		static const int kButtoncoTurretNeg90_ID = 10;
+		static const int kButtonCoTurretNeg90_ID = 10;
 		static const int kButtonCoTurret0_ID = 11;
 		static const int kButtonCoTurret90_ID = 13;
 		static const int kButtonCoTurretPlus_ID = 3;
