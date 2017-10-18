@@ -1,7 +1,18 @@
 #include "Lights.h"
 #include "../RobotMap.h"
 
-Lights::Lights() : Subsystem("ExampleSubsystem") {
+const char Lights::kSubsystemName[] = "Lights";
+
+std::shared_ptr<Lights> Lights::self;
+
+std::shared_ptr<Lights> Lights::getInstance() {
+	if (! self) {
+		self = std::shared_ptr<Lights>(new Lights);
+	}
+	return self;
+}
+
+Lights::Lights() : Subsystem(kSubsystemName) {
 
 }
 
