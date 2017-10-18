@@ -3,7 +3,7 @@
 #include "WPILib.h"
 
 class RobotMap {
-public:
+public: //hi
 
 
 	static const int kLeftFrontID = 5;

@@ -92,10 +92,10 @@ public:
 	 std::shared_ptr<Joystick> getCoDriver();
 
 double getCoDriverLeftXAxis() const;
-double getcoDriverLeftYAxis() const;
+double getCoDriverLeftYAxis() const;
 
 double getCoDriverRightXAxis() const;
-double getCoDriverRightYAxis() const;
+double getCoDriverRightYAxis() const; //hi
 
 double getCoDriverLeftTrigger() const;
 double getCoDriverRightTrigger() const;
