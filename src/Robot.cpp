@@ -1,6 +1,9 @@
 #include "Robot.h"
 #include "OI.h"
 #include "Subsystems/Chassis.h"
+#include "Subsystems/Elevator.h"
+#include "Subsystems/Intake.h"
+#include "Subsystems/Lights.h"
 #include "RobotMap.h"
 
 std::unique_ptr<OI> Robot::oi;
@@ -21,6 +24,9 @@ void Robot::RobotInit()
 	// news. Don't move it.
 
    Chassis::getInstance();
+   OI::getInstance();
+   Intake::getInstance();
+   Lights::getInstance();
    OI::getInstance();
 
 }
