@@ -3,13 +3,19 @@
 
 #include <Commands/Subsystem.h>
 
-class Intake : public Subsystem {
+class Intake : public frc::Subsystem {
 private:
 	// It's desirable that everything possible under private except
 	// for methods that implement subsystem capabilities
 
-public:
+	static const char kSubsystemName[];
+	static std::shared_ptr<Intake> self;
 	Intake();
+
+public:
+
+	static std::shared_ptr<Intake> getInstance();
+
 	void InitDefaultCommand();
 };
 

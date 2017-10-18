@@ -1,7 +1,18 @@
 #include "Intake.h"
 #include "../RobotMap.h"
 
-Intake::Intake() : Subsystem("ExampleSubsystem") {
+const char Intake::kSubsystemName[] = "Intake";
+
+std::shared_ptr<Intake> Intake::self;
+
+std::shared_ptr<Intake> Intake::getInstance() {
+	if (! self) {
+		self = std::shared_ptr<Intake>(new Intake);
+	}
+	return self;
+}
+
+Intake::Intake() : Subsystem(kSubsystemName) {
 
 }
 
