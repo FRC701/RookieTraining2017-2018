@@ -31,7 +31,7 @@ void Lights::InitDefaultCommand() {
 // here. Call these from Commands.
 
 void Lights::SetGlow(LightState value){
-	mainGlow.Set(static_cast<Relay::Value>(value))
-	leftGlow.Set(static_cast<Relay::Value>(value))
-	rightGlow.Set(static_cast<Relay::Value>(value))
+	mainGlow.Set(static_cast<Relay::Value>(value));
+	leftGlow.Set(static_cast<Relay::Value>(value));
+	rightGlow.Set(static_cast<Relay::Value>(value));
 }
