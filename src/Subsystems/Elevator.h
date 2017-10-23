@@ -1,5 +1,5 @@
-#ifndef SRC_SUBSYSTEMS_ELEVATOR_H_
-#define SRC_SUBSYSTEMS_ELEVATOR_H_
+#ifndef ELEVATOR_H
+#define ELEVATOR_H
 
 #include <Commands/Subsystem.h>
 
