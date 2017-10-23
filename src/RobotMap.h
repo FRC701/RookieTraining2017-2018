@@ -26,7 +26,7 @@ public: //hi
 	static const int kActuatorR = 7;
 
 	static const int kHeimdallGlowID = 0;
-	static const int kLeftyLightID = 1;
+	static const int kLeftLightID = 1;
 	static const int kRightLightID = 2;
 
 static void init();
