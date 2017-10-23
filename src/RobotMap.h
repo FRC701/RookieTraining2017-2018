@@ -21,6 +21,9 @@ static const int kHaySqueezeR = 6;
 static const int kBrakeF = 2;
 static const int kBrakeR = 5;
 
+static const int kActuatorF = 0;
+static const int kActuatorR = 7;
+
 };
 
 #endif
