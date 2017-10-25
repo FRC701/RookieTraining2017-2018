@@ -24,6 +24,13 @@ static const int kBrakeR = 5;
 static const int kActuatorF = 0;
 static const int kActuatorR = 7;
 
+static const int kHeimdallGlowID = 0;
+static const int kLeftLightID = 1;
+static const int kRightLightID = 2;
+
+static void init();
+
 };
 
 #endif
+

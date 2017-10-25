@@ -27,7 +27,7 @@ void Lights::InitDefaultCommand() {
 }
 
 void Lights::SetGlow(LightState value){
-	mainGlow.Set(static_cast<Replay::Value>(value));
-	leftGlow.Set(static_cast<Replay::Value>(value));
+	mainGlow.Set(static_cast<Relay::Value>(value));
+	leftGlow.Set(static_cast<Relay::Value>(value));
 	rightGlow.Set(static_cast<Relay::Value>(value));
 }
