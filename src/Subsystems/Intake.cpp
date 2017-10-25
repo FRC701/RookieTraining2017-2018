@@ -3,7 +3,7 @@
 
 const char Intake::kSubsytemName[] = "Intake";
 
-std::shared_ptr<Intake> intake::self;
+std::shared_ptr<Intake> Intake::self;
 
 std::shared_ptr<Intake> Intake::getInstance() {
   if (! self) {
@@ -12,7 +12,7 @@ std::shared_ptr<Intake> Intake::getInstance() {
   return self;
 }
 
-Intake::Intake() : Subsytem(kSubsytemName) {
+Intake::Intake() : Subsystem(kSubsytemName) {
 
 }
 
@@ -21,6 +21,6 @@ void Intake::InitDefaultCommand() {
         // SetDefaultCommand(new MySpecialCommand());
 }
 
-// Put methods for controlling this subsytem
+// Put methods for controlling this subsystem
 // here. Call these from Commands.
 
