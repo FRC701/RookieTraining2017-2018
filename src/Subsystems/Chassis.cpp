@@ -1,7 +1,7 @@
 #include "Chassis.h"
 #include "../RobotMap.h"
-#include "CANTalon.h"
 #include "../Commands/TankDrive.h"
+#include "CANTalon.h"
 
 const char Chassis::kSubsystemName[] = "Chassis";
 
@@ -21,15 +21,13 @@ Chassis::Chassis() : Subsystem(kSubsystemName),
 		rightRearWheel(RobotMap::kRightRearID)
 
 {
-	SetUpTalon();
-	SetupDrive();
-	SetBrake();
+
 }
 
 void Chassis::InitDefaultCommand() {
 	// Set the default command for a subsystem here.
 	// SetDefaultCommand(new MySpecialCommand());
-	SetDefaultCommand(newTankDrive());
+	SetDefaultCommand(new TankDrive());
 
 }
 
