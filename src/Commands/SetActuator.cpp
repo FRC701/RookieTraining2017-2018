@@ -5,7 +5,7 @@ SetActuator::SetActuator(Intake::ActuatorValue value)
 {
 	//comments about using requires
 	//comments about using requires
-	Requires(Intake::getInstance(.get());
+	Requires(Intake::getInstance().get());
 }
 
 //Called just before this Command runs the first time
