@@ -16,8 +16,6 @@
 #include "Commands/Command.h"
 #include "RobotMap.h"
 #include "LiveWindow/LiveWindow.h"
-
-
 #include "OI.h"
 
 class Robot : public IterativeRobot {
@@ -38,7 +36,6 @@ private:
 	static std::unique_ptr<OI> oi;
 	LiveWindow *lw = LiveWindow::GetInstance();
 	frc::SendableChooser<frc::Command*> chooser;
-
 
 };
 #endif

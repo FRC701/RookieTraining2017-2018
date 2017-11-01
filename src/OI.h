@@ -24,7 +24,7 @@ private:
   JoystickButton dBack;
 
 
-//..........codriver.........
+//..........codriver..........
 
   std::shared_ptr<Joystick> coDriver;
 
