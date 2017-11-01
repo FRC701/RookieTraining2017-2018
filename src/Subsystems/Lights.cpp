@@ -12,7 +12,7 @@ std::shared_ptr<Lights> Lights::getInstance() {
   return self;
 }
 
-Lights::Lights() : Subsytem(kSubsystemName) {
+Lights::Lights() : Subsystem(kSubsystemName) {
 
 }
 
@@ -21,5 +21,5 @@ void Lights::InitDefaultCommand() {
        // SetDefaultCommand(new MySpecialCommand());
 }
 
-// Put methods for controlling this subsytem
+// Put methods for controlling this subsystem
 // here. Call these from Commands.
