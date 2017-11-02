@@ -1,17 +1,20 @@
-#include "SetLights.h"
+#ifndef SetLights_H
+#define SetLights_H
 
-SetLights::SetLights(Lights::LightState value) :
-        mValue(value) {
-        // Use Requires() here to declare subsystem dependencies
-        Requires(Lights::getInstance().get());
-}
+#include "Commands/Command.h"
+#include "../Subsystems/Lights.h"
 
-// Called just before this Command runs the first time
-void SetLights::Initialize() {
+class SetLights : public frc::Command {
+public:
+		SetLights(Lights::LightState value);
+		void Initialize();
+		void Execxute();
+		bool IsFinished();
+		void End();
+		void Interrupted();
 
-}
+private:
+		Lights::LightState mValue;
+};
 
-// Called repeatedly when this Command is scheduled to run
-void SetLights::Execute() {
-        Lights::getInstance()->SetGlow(mValue);
-}
+#endif // SetLights_H
