@@ -12,7 +12,12 @@ std::shared_ptr<Elevator> Elevator::getInstance() {
   return self;
 }
 
-Elevator::Elevator() : Subsystem(kSubsytemName) {
+Elevator::Elevator() : Subsystem(kSubsytemName),
+				leftSpool(RobotMap::kLeftSpoolID),
+				rightSpool(RobotMap::kRightSpoolID),
+				haySqueeze(RobotMap::kHaySqueezeF, RobotMap::kHaySqueezeR),
+				brake(RobotMap::kBrakeF, RobotMap::kBrakeR)
+{
 
 }
 
@@ -24,5 +29,23 @@ void Elevator::InitDefaultCommand() {
 // Put methods for controlling this subsystem
 // here. Call these from Commands.
 
+void Elevator::SetBrake(double speed){
+		leftSpool.Set(speed);
+		rightSpool.Set(speed);
+}
 
+void Elevator::SetBrake(BrakeValue value){
+		brake.Set(static_cast<DoubleSolenoid::Value>(value));
+}
 
+bool Elevator::IsBrakeOn() const {
+		return brake.Get() == static_cast<DoubleSolenoid::Value>(kBrakeOn);
+}
+
+bool Elevator::IsHaySqueezepen() const {
+		return haySqueeze.Get() == static_cast<DoubleSolenoid::Value>(kOpen);
+}
+
+void Elevator::SetHaySqueeze(HaySqueezeValue value){
+		haySqueeze.Set(static_cast<DoubleSolenoid::Value>(value));
+}
