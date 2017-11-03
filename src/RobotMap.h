@@ -33,7 +33,7 @@ public:
 			static const int kBrakeF = 2;
 			static const int kBrakeR = 5;
 
-			//intake
+			//Intake
 
 			static const int kActuatorF = 0;
 			static const int kActuatorR = 7;
