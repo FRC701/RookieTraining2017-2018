@@ -31,7 +31,7 @@ public:
 			static const int kHaySqueezeF = 1;
 			static const int kHaySqueezeR = 6;
 			static const int kBrakeF = 2;
-			static const int kBrakerR = 5;
+			static const int kBrakeR = 5;
 
 			//intake
 
