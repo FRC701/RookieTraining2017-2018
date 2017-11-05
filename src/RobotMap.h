@@ -46,11 +46,8 @@ public:
             static const int kLeftLightID = 1;
             static const int kRightLightID = 2;
 
-
   static void init();
 };
 #endif
 
 
-
-};
