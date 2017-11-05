@@ -3,7 +3,6 @@
 
 #include <Commands/Subsystem.h>
 #include "CANTalon.h"
-#include "WPIlib.h"
 
 class Chassis : public Subsystem {
 

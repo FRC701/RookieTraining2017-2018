@@ -1,5 +1,6 @@
 #include "Elevator.h"
 #include "../RobotMap.h"
+#include "../Commands/ElevatorOn.h"
 
 const char Elevator::kSubsytemName[] = "Elevator";
 
@@ -24,12 +25,13 @@ Elevator::Elevator() : Subsystem(kSubsytemName),
 void Elevator::InitDefaultCommand() {
         // Set the default command for a subsystem here.
         // SetDefaultCOmman(new MySpecialCommand());
+	    SetDefaultCommand(new ElevatorOn(0.0));
 }
 
 // Put methods for controlling this subsystem
 // here. Call these from Commands.
 
-void Elevator::SetBrake(double speed){
+void Elevator::SetSpool(double speed){
 		leftSpool.Set(speed);
 		rightSpool.Set(speed);
 }
