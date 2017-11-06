@@ -10,7 +10,7 @@ public:
 		void Initialize();
 
 private:
-		enum Elevator::BrakeValuie mValue;
+		enum Elevator::BrakeValue mValue;
 };
 
 #endif // SetBrake_H

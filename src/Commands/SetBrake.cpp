@@ -11,5 +11,4 @@ SetBrake::SetBrake(Elevator::BrakeValue value)
 void SetBrake::Initialize() {
 
 		Elevator::getInstance()->SetBrake(mValue);
-
 }
