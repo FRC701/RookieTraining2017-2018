@@ -16,4 +16,4 @@ private:
 		double mSpeed;
 };
 
-#endif // ElevatorOn.H
+#endif // ElevatorOn_H

@@ -13,5 +13,4 @@ void ToggleActuator::Initialize() {
 		Intake::ActuatorValue value
 				= Intake::getInstance()->IsActuatorClosed() ? Intake::kActuatorOpen : Intake::kActuatorClosed;
         Intake::getInstance()->SetActuator(value);
-
 }
