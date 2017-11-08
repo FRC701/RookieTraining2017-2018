@@ -13,7 +13,7 @@ static const int kRightRearID = 12;
 static const int kLeftSpoolID = 2;
 static const int kRightSpoolID = 4;
 
-static const int kLeftSinnerID = 8;
+static const int kLeftSpinnerID = 8;
 static const int kRightSpinnerID = 7;
 
 static const int kHaySqueezeF = 1;
