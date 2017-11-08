@@ -6,7 +6,7 @@
 class ToggleActuator : public frc::InstantCommand {
 public:
 	ToggleActuator();
-	void Initialized();
+	void Initialize();
 
 };
 #endif /* SRC_COMMANDS_TOGGLEACTUATOR_H_ */
