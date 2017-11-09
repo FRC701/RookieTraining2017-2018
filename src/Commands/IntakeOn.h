@@ -1,12 +1,10 @@
 
-
 #ifndef IntakeOn_H
-
 #define IntakeOn_H
 
 #include "Commands/Command.h"
 
-class IntakeOn : public frc::Command{
+class IntakeOn : public frc::Command {
 public:
 	IntakeOn(double speed);
 	void Initialize();
@@ -19,9 +17,5 @@ private:
 	double mSpeed;
 
 };
-
-
-
-
 
 #endif
