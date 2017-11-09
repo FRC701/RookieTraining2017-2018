@@ -10,5 +10,6 @@ SetActuator::SetActuator(Intake::ActuatorValue value)
 
 //Called just before this Command runs the first time
 void SetActuator::Initialize() {
+
 		Intake::getInstance()->SetActuator(mValue);
 }

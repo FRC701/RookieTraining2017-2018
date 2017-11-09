@@ -14,7 +14,6 @@ public:
 
 private:
 		double mSpeed;
-
 };
 
 #endif

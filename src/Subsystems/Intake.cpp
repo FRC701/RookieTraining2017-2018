@@ -32,26 +32,19 @@ void Intake::InitDefaultCommand() {
 // here. Call these from Commands.
 
 bool Intake::IsActuatorClosed() const{
-
 		return actuator.Get() == static_cast<DoubleSolenoid::Value>(kActuatorClosed);
-
 }
 
 void Intake::SetActuator(ActuatorValue value){
-
 		actuator.Set(static_cast<DoubleSolenoid::Value>(value));
-
 }
 
 void Intake::SetIntake(double speed){
-
 			leftSpinner.Set(speed);
 			rightSpinner.Set(speed);
-
 }
 
 void Intake::SetupIntake(){
 			leftSpinner.SetControlMode(CANTalon::kVoltage);
 			rightSpinner.SetControlMode(CANTalon::kVoltage);
-
 }

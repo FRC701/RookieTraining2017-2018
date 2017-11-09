@@ -1,6 +1,5 @@
 #include "SetHaySqueeze.h"
 
-
 SetHaySqueeze::SetHaySqueeze(Elevator::HaySqueezeValue value)
 : mValue(value) {
 	//sssssssstuuuuuffffffffffffff
@@ -12,5 +11,4 @@ SetHaySqueeze::SetHaySqueeze(Elevator::HaySqueezeValue value)
 void SetHaySqueeze::Initialize() {
 
 	Elevator::getInstance()->SetHaySqueeze(mValue);
-
 }

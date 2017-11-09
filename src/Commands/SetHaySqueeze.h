@@ -4,7 +4,7 @@
 #include "Commands/InstantCommand.h"
 #include "../Subsystems/Elevator.h"
 
-class SetHaySqueeze : public InstantCommand {
+class SetHaySqueeze : public frc::InstantCommand {
 public:
 		SetHaySqueeze(Elevator::HaySqueezeValue value);
 		void Initialize();

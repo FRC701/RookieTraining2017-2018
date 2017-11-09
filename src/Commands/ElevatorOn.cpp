@@ -1,6 +1,6 @@
 #include "ElevatorOn.h"
-#include "../Subsystems/Elevator.h"
 #include "../OI.h"
+#include "../Subsystems/Elevator.h"
 
 ElevatorOn::ElevatorOn(double speed)
 : mSpeed(speed) {
