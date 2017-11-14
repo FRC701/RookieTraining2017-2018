@@ -27,7 +27,7 @@ public:
 	void SetBrake(BrakeValue value);
 	bool IsBrakeOn() const;
 
-	bool IsHaySqueezepen() const;
+	bool IsHaySqueezeOpen() const;
 	void SetHaySqueeze(HaySqueezeValue value);
 
 	void SetSpool(double speed);
