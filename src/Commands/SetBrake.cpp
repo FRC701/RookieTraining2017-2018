@@ -1,7 +1,7 @@
 #include "SetBrake.h"
 
 SetBrake::SetBrake(Elevator::BrakeValue value)
-:mValue(value) {
+: mValue(value) {
 	Requires(Elevator::getInstance().get());
 
 }

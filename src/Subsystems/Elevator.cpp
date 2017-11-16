@@ -32,8 +32,17 @@ void Elevator::SetSpool(double speed){
 
 }
 
+void Elevator::SetBrake(BrakeValue value){
+	brake.Set(static_cast<DoubleSolenoid::Value>(value));
+
+}
+
 bool Elevator::IsBrakeOn() const{
 	return brake.Get() == static_cast<DoubleSolenoid::Value>(kOpen);
+}
+
+bool Elevator::IsHaySqueezeOpen() const {
+	return haySqueeze.Get() == static_cast<DoubleSolenoid::Value>(kBrakeOn);
 }
 
 void Elevator::SetHaySqueeze(HaySqueezeValue value){
