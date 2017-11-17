@@ -6,17 +6,13 @@
 ElevatorOn::ElevatorOn(double speed)
 : mSpeed(speed) {
 	Requires(Elevator::getInstance().get());
-
 }
 void ElevatorOn::Initialize() {
-
 }
-
 // Called repeatedly when this Command is scheduled to run
 void ElevatorOn::Execute() {
 static std::shared_ptr<OI> oi = OI::getInstance();
 static std::shared_ptr<Elevator> elevator = Elevator::getInstance();
-
 elevator->SetSpool(mSpeed);
 
 if(oi->getDriverRightTrigger() >= 0.25){
@@ -35,8 +31,6 @@ bool ElevatorOn::IsFinished() {
 }
 void ElevatorOn::End() {
 }
-
 // Make this return true when this Command no longer needs to run execute()
 void ElevatorOn::Interrupted() {
-
 }

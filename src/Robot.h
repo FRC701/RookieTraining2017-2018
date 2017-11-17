@@ -8,21 +8,16 @@
 // update. Deleting the comments indicating the section will prevent
 // it from being updated in the future.
 
-
 #ifndef _ROBOT_H
 #define _ROBOT_H
-
 #include "WPILib.h"
 #include "Commands/Command.h"
 #include "RobotMap.h"
 #include "LiveWindow/LiveWindow.h"
-
 #include "OI.h"
-
 class Robot : public IterativeRobot {
 public:
 	Robot();
-
 	virtual void RobotPeriodic();
 	virtual void RobotInit();
 	virtual void DisabledInit();
@@ -32,13 +27,9 @@ public:
 	virtual void TeleopInit();
 	virtual void TeleopPeriodic();
 	virtual void TestPeriodic();
-
 private:
-
 	static std::unique_ptr<OI> oi;
 	LiveWindow *lw = LiveWindow::GetInstance();
     frc::SendableChooser<frc::Command*> chooser;
-
-
 };
 #endif

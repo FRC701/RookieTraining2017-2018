@@ -1,14 +1,10 @@
 #include "Chassis.h"
 #include "../RobotMap.h"
 #include "CANTalon.h"
-
 #include "../Commands/TankDrive.h"
 
 const char Chassis::kSubsystemName[] = "Chassis";
-
 std::shared_ptr<Chassis> Chassis::self;
-
-
 std::shared_ptr<Chassis> Chassis::getInstance() {
 if(! self) {
 	 self = std::shared_ptr<Chassis>(new Chassis);
@@ -20,27 +16,20 @@ leftFrontWheel(RobotMap::kLeftFrontID),
 leftRearWheel(RobotMap::kLeftRearID),
 rightFrontWheel(RobotMap::kRightFrontID),
 rightRearWheel(RobotMap::kRightRearID)
-
 {
 SetUpTalon();
 SetupDrive();
 SetBrake();
 }
-
 void Chassis::InitDefaultCommand() {
 	// Set the default command for a subsystem here.
 	// SetDefaultCommand(new MySpecialCommand());
 	SetDefaultCommand(new TankDrive());
 }
-
-// Put methods for controlling this subsystem
-// here. Call these from Commands.
 void Chassis::SetTankDrive(double left, double right) {
 	leftFrontWheel.Set(left);
 	rightFrontWheel.Set(right);
-
 }
-
 void Chassis::SetCoast() {
 	rightFrontWheel.ConfigNeutralMode(CANTalon::kNeutralMode_Coast);
 	rightRearWheel.ConfigNeutralMode(CANTalon::kNeutralMode_Coast);
@@ -55,7 +44,6 @@ void Chassis::SetBrake() {
 }
 void Chassis::SetupDrive() {
 	rightFrontWheel.SetControlMode(CANTalon::kVoltage);
-
 	leftFrontWheel.SetInverted(true);
 	leftFrontWheel.SetControlMode(CANTalon::kVoltage);
 }
@@ -65,10 +53,13 @@ void Chassis::SetUpTalon() {
 	leftFrontWheel.SetControlMode(CANTalon::kVoltage);
 	leftFrontWheel.ConfigEncoderCodesPerRev(128);
 	leftFrontWheel.SetSensorDirection(false);
-
+	leftFrontWheel.SetInverted(true);
+	leftFrontWheel.SetFeedbackDevice(CANTalon::QuadEncoder);
+	leftFrontWheel.SetControlMode(CANTalon::kVoltage);
+	leftFrontWheel.ConfigEncoderCodesPerRev(128);
+	leftFrontWheel.SetSensorDirection(false);
 	rightRearWheel.SetControlMode(CANTalon::kVoltage);
 	rightRearWheel.Set(RobotMap::kRightFrontID);
-
 	leftRearWheel.SetControlMode(CANTalon::kFollower);
 	leftRearWheel.Set(RobotMap::kLeftFrontID);
 }

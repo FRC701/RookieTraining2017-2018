@@ -3,7 +3,6 @@
 
 ToggleBrake::ToggleBrake() {
 	Requires(Elevator::getInstance().get());
-
 }
 void ToggleBrake::Initialize() {
 	Elevator::BrakeValue value

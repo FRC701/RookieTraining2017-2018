@@ -5,7 +5,6 @@ SetActuator::SetActuator(Intake::ActuatorValue value)
 {
 Requires(Intake::getInstance().get());
 }
-
 void SetActuator::Initialize() {
 	Intake::getInstance()->SetActuator(mValue);
 }

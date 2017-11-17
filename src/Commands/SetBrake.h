@@ -1,6 +1,5 @@
 #ifndef SetBrake_H
 #define SetBrake_H
-
 #include "Commands/InstantCommand.h"
 #include "../Subsystems/Elevator.h"
 
@@ -11,5 +10,4 @@ public:
 private:
 	enum Elevator::BrakeValue mValue;
 };
-
 #endif  // SetBrake_H

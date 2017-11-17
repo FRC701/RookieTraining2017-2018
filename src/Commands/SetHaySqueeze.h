@@ -1,6 +1,5 @@
 #ifndef SetHaySqueeze_H
 #define SetHaySqueeze_H
-
 #include "Commands/InstantCommand.h"
 #include "../Subsystems/Elevator.h"
 
@@ -10,7 +9,5 @@ public:
 	void Initialize();
 private:
 	enum Elevator::HaySqueezeValue mValue;
-
 };
-
 #endif  // SetHaySqueeze_H
