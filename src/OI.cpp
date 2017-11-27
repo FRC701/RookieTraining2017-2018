@@ -80,7 +80,9 @@ OI::OI()
  dBack.WhenPressed(new AutonomousCommand());
  dRB.WhenPressed(new ToggleBrake());
  dLB.WhenPressed(new ToggleHaySqueeze());
- dX.
+ dX.WhenPressed(new ToggleActuator());
+ dB.WhileHeld(new IntakeOn(1.0));
+ dA.WhileHeld(new IntakeOn(-1.0));
 }
 
 std::shared_ptr<Joystick> OI::getDriver() {
