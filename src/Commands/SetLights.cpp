@@ -14,7 +14,7 @@ void SetLights::Execute() {
 }
 
 bool SetLights::IsFinished() {
-	return false;
+	return true;
 }
 
 void SetLights::End() {

@@ -1,5 +1,6 @@
 #include "Elevator.h"
 #include "../RobotMap.h"
+#include "../Commands/ElevatorOn.h"
 
 const char Elevator::kSubsystemName[] = "Elevator";
 
@@ -23,6 +24,7 @@ Elevator::Elevator() : Subsystem(kSubsystemName),
 
 
 void Elevator::InitDefaultCommand() {
+	SetDefaultCommand(new ElevatorOn(0.0));
 
 }
 

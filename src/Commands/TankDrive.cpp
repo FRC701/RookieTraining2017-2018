@@ -20,7 +20,7 @@ void TankDrive::Execute() {
 }
 
 bool TankDrive::IsFinished() {
-	return false;
+	return true;
 }
 
 void TankDrive::End() {

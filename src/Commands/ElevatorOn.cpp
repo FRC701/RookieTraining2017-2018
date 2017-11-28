@@ -33,7 +33,7 @@ void ElevatorOn::Execute() {
 }
 
 bool ElevatorOn::IsFinished() {
-	return false;
+	return true;
 }
 
 void ElevatorOn::End() {
