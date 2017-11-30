@@ -1,15 +1,17 @@
-/*
- * SetHaySqueeze.h
- *
- *  Created on: Nov 8, 2017
- *      Author: VandenRobotics
- */
+#ifndef SetHaySqueeze_H
+#define SetHaySqueeze_H
 
-#ifndef SRC_COMMANDS_SETHAYSQUEEZE_H_
-#define SRC_COMMANDS_SETHAYSQUEEZE_H_
+#include "Commands/InstantCommand.h"
+#include "../Subsystems/Elevator.h"
 
+class SetHaySqueeze : public InstantCommand {
+public:
+	SetHaySqueeze(Elevator::HaySqueezeValue value);
+	void Initialize();
 
+private:
+	enum Elevator::HaySqueezeValue mValue;
 
+};
 
-
-#endif /* SRC_COMMANDS_SETHAYSQUEEZE_H_ */
+#endif
